@@ -1,16 +1,47 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.panel {
+
+}
 .clipboard {
-    color: white;
-    line-height:100px;
-    text-align: center;
-    font-family: sans-serif;
-    width:100px;
-    height:100px;
-    border: none;
-    margin-left: 10px;
-    margin-bottom: 5px;
-    font-size: 16px;
+  color: transparent;
+  line-height:100px;
+  text-align: center;
+  font-family: sans-serif;
+  width:200px;
+  height:200px;
+  border: none;
+  font-size: 16px;
 }
 .clipboard:hover {
   font-weight: bold;
   cursor: pointer;
+}
+.copied {
+  display: none;
+  background-color: grey;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-size: 72px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.copied:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }

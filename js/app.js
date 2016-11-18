@@ -2,7 +2,7 @@ $( document ).ready(function() {
   var clipboard = new Clipboard('.clipboard');
 
   var colors = [
-    "#EFDECD", 
+    "#EFDECD",
     "#CD9575",
     "#FDD9B5",
     "#78DBE2",
@@ -73,7 +73,7 @@ $( document ).ready(function() {
     "#1974D2",
     "#FFA343",
     "#BAB86C",
-    "#FF7538", 
+    "#FF7538",
     "#F8D568",
     "#E6A8D7",
     "#414A4C",
@@ -133,16 +133,21 @@ $( document ).ready(function() {
     "#CDA4DE",
     "#FCE883",
     "#C5E384",
-    "#FFAE42",
-];
+    "#FFAE42",];
 
   $.map(colors, function(val) {
-    var colorToPick = $("<button class='clipboard' data-clipboard-text="+ val +">" + val + "</button>");
+    var colorToPick = $("<button class='clipboard' data-clipboard-text="+ val +">"+ val +"</button>");
     $(".panel").append(colorToPick);
   });
-
 
   $('.panel > button').each(function () {
       $(this).css('background-color',$(this).text());
   });
+
+  $('button').click(function() {
+    $('.copied').css('background-color',$(this).text());
+    $('.copied').text("Copied !");
+    $('.copied').fadeIn(500).delay(300);
+    $('.copied').fadeOut(500);
+  })
 });
