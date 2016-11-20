@@ -5,4 +5,4 @@ A simple color picker with JQuery
   * ClipboardJS
 <hr />
 
-<center>![](img/code.gif)</center>
+<div style="text-align:center"><img src ="img/code.gif" /></div>
