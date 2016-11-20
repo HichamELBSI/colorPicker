@@ -1,4 +1,4 @@
-# colorPicker
+# Color Picker
 
 A simple color picker with JQuery
 
