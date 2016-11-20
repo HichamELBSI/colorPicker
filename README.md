@@ -4,4 +4,4 @@ A simple color picker with JQuery
   * ClipboardJS
 
 <hr/>
-![](img/test.gif)
+<!--![](img/test.gif)-->
