@@ -1,22 +1,22 @@
 $( document ).ready(function() {
-    var clipboard = new Clipboard('.clipboard');
+  var clipboard = new Clipboard('.clipboard');
 
-    var colors = [
-        "#16a085",
-        "#1abc9c",
-        "#2ecc71",
-        "#27ae60",
-        "#3498db",
-        "#2980b9",
-        "#9b59b6",
-        "#8e44ad",
-        "#34495e",
-        "#2c3e50",
-        "#f1c40f",
-        "#f39c12",
-        "#e67e22",
-        "#d35400",
-    ];
+  var colors = [
+      "#16a085",
+      "#1abc9c",
+      "#2ecc71",
+      "#27ae60",
+      "#3498db",
+      "#2980b9",
+      "#9b59b6",
+      "#8e44ad",
+      "#34495e",
+      "#2c3e50",
+      "#f1c40f",
+      "#f39c12",
+      "#e67e22",
+      "#d35400",
+  ];
 
   $.map(colors, function(val) {
     var colorToPick = $("<button class='clipboard' data-clipboard-text="+ val +">"+ val +"</button>");
